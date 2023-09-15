@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .cursor {
+    @apply absolute w-8 h-8 bg-white rounded-full opacity-50 border-2 border-black border-solid pointer-events-none;
+  }
+}
+
+div {
+  cursor: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
